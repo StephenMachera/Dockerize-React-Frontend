@@ -6,11 +6,11 @@
     build:
       runs-on:ubuntu-latest
     steps:
-      - name : checkout_code
-        uses : actions / checkout@v5
-      - name : set up react.js
-        uses : kirkeaton/setup-react@v2
-        with :
+      - name: checkout_code
+        uses: actions / checkout@v5
+      - name: set up react.js
+        uses: kirkeaton/setup-react@v2
+        with:
           react-version: 18
           react-dom-version: 18
       - name : install dependencies
