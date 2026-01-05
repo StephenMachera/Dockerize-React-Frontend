@@ -1,0 +1,9 @@
+services:
+  web:
+    image: myapp:1.0
+    container_name: React_app
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
